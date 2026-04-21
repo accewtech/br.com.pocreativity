@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PoCreativity</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '899801106302711');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=899801106302711&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body style="background-color: #000000;">
+    <nav class="navbar fixed-top bg-dark navbar-dark" style="background-color: #000 !important;align-content: center;">
+        <div class="container"><a class="navbar-brand" href="#" style="width: 80%;"><img class="img-fluid" width="1920" height="360" src="assets/img/Logo%20Site.png" style="max-width: 20%;"></a><button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formulario">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr id="inicio" style="width: 80%;height: 2px;margin: 80px auto;background-color: #b1b1b1;">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="fundo-cinematografico">
+                        <h1 style="color: #ffffff;margin-bottom: 5%;font-size: 36px;font-family: 'Poppins';font-weight: bold;text-align: left;">Produção audiovisual que conecta, inspira e&nbsp;transforma.</h1>
+                        <p style="color: #ffffff;margin-bottom: 10%;font-family: 'Poppins';font-size: 14px;text-align: left;">Do roteiro à edição final, para garantir que seu vídeo seja mais que um produto: seja um impacto.</p><a class="btn-orcamento-1" href="#formulario" style="font-family: 'Poppins';text-align: center;">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-6"><section class="acordeon-videos py-5">
+  <div class="container">
+    <div class="acordeon-wrapper">
+      
+      <div class="card-item active" onclick="abrirPopup('https://www.youtube.com/embed/Y4t5jYrvOhI?si=wfXKAoCVbiZmpju_')">
+        <div class="card-content" style="background-image: url('assets/img/Cases/video1.webp');">
+          <div class="card-info">
+            <h3>1</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item" onclick="abrirPopup('https://youtube.com/embed/zuJNutHSDKw?si=mH9hGtBSQk7pQWs1')">
+        <div class="card-content" style="background-image: url('assets/img/Cases/video2.webp');">
+          <div class="card-info">
+            <h3>2</h3>
+          </div>
+        </div>
+      </div>
+    <div class="card-item" onclick="abrirPopup('https://www.youtube.com/embed/4XxQ1YyM6j8')">
+        <div class="card-content" style="background-image: url('assets/img/Cases/video3.webp');">
+          <div class="card-info">
+            <h3>3</h3>
+          </div>
+        </div>
+      </div>
+<div class="card-item" onclick="abrirPopup('https://www.youtube.com/embed/jIvijV3ysDk')">
+        <div class="card-content" style="background-image: url('assets/img/Cases/video4.webp');">
+          <div class="card-info">
+            <h3>4</h3>
+          </div>
+        </div>
+      </div>
+<div class="card-item" onclick="abrirPopup('https://www.youtube.com/embed/Q3b-mZmGx2I')">
+        <div class="card-content" style="background-image: url('assets/img/Cases/video5.webp');">
+          <div class="card-info">
+            <h3>5</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark border-0">
+      <div class="modal-header border-0 p-2">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 80%;height: 2px;margin: 30px auto;background-color: #b1b1b1;">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xxl-5 offset-xxl-0" style="max-width: 20%;display: flex;justify-content: center;align-items: center;"><img class="img-fluid" width="1920" height="1080" src="assets/img/Parceiros/larissa.png" style="width: 70%;"></div>
+                <div class="col-md-3" style="max-width: 20%;display: flex;justify-content: center;align-items: center;"><img class="img-fluid" width="1920" height="1080" src="assets/img/Parceiros/compre.png" style="width: 70%;"></div>
+                <div class="col-md-3" style="max-width: 20%;display: flex;justify-content: center;align-items: center;"><img class="img-fluid" width="1920" height="1080" src="assets/img/Parceiros/quero.png" style="width: 70%;"></div>
+                <div class="col-md-3" style="max-width: 20%;display: flex;justify-content: center;align-items: center;"><img class="img-fluid" width="1920" height="1080" src="assets/img/Parceiros/cdl.png" style="width: 70%;"></div>
+                <div class="col-md-3" style="max-width: 20%;display: flex;justify-content: center;align-items: center;"><img class="img-fluid" width="1920" height="1080" src="assets/img/Parceiros/wedson.png" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+    <hr id="sobre" style="width: 80%;height: 3px;margin: 30px auto 100px;background-color: #b1b1b1;">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><section class="portfolio-section py-5 bg-black">
+  <div class="container text-center text-white">
+    
+    <!-- Imagem Única com Efeito (Substituindo o Vídeo) -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <a href="https://www.youtube.com/@pocreativity" class="video-link" target="_blank">
+          <!-- ratio-16x9 garante a proporção de cinema -->
+          <div class="ratio ratio-16x9 video-frame shadow-hover">
+            <div class="team-img-portfolio" style="background-image: url('assets/img/Equipe/capa.webp');">
+              <div class="video-overlay d-flex align-items-center justify-content-center">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Estatísticas -->
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="stat-item">
+          <h2 class="display-5 fw-bold po-text">+100</h2>
+          <p class="text-uppercase small-text">De empresas<br>atendidas</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-item">
+          <div class="icon-box mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#F55C01" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <p class="text-uppercase small-text">Clientes atendidos em todo o Brasil </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-item">
+          <h2 class="display-5 fw-bold po-text">+5</h2>
+          <p class="text-uppercase small-text">Anos de<br>mercado</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+:root {
+  --po-brand-color: #F55C01; 
+}
+
+.portfolio-section { background-color: #000; }
+
+.video-link { text-decoration: none; display: block; }
+
+/* Moldura 16:9 */
+.video-frame {
+  border: 1px solid #222; 
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-color: #111;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Efeito da Imagem P&B */
+.team-img-portfolio {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+  position: absolute;
+}
+
+.video-link:hover .team-img-portfolio {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Overlay e Info */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+  transition: background 0.3s ease;
+}
+
+.video-link:hover .video-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(245, 92, 1, 0.1) 100%);
+}
+
+.team-info-portfolio {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  color: #fff;
+}
+
+.team-info-portfolio h3 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.team-info-portfolio p {
+  color: var(--po-brand-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Estilo das Estatísticas */
+.shadow-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 50px rgba(245, 92, 1, 0.3); 
+}
+
+.po-text {
+  color: var(--po-brand-color);
+  letter-spacing: -1.5px;
+  text-shadow: 0 0 15px rgba(245, 92, 1, 0.15); 
+}
+
+.small-text {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #efefef;
+  font-weight: 500;
+}
+</style></div>
+                <div class="col-md-6" style="align-content: center;">
+                    <h1 style="margin-bottom: 30px;font-family: 'Poppins';"><span style="color: rgb(255, 255, 255);">A nossa história</span></h1>
+                    <p style="margin-bottom: 30px;font-family: 'Poppins';"><span style="color: rgb(255, 255, 255);">Nossa essência é a conexão.</span><br><br><span style="color: rgb(255, 255, 255);">Acreditamos no poder das narrativas audiovisuais para estabelecer laços autênticos.</span><br><br><span style="color: rgb(255, 255, 255);">Em cada produção, unimos criatividade e técnica para transformar visões em realidade, oferecendo soluções completas em direção, captação e edição.</span><br><br><span style="color: rgb(255, 255, 255);">Escrevemos nossa história projeto a projeto, cuidando de cada etapa. Do primeiro rascunho do roteiro ao corte final da pós-produção. Somos uma equipe jovem, focada e movida pelo desafio de garantir que a sua mensagem não seja apenas entregue, mas lembrada.</span></p><a class="btn-orcamento-1" href="#formulario" style="font-family: 'Poppins';text-align: center;">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="height: 50px;">
+    <section style="background-color: #F55C01;border-radius: 20px;">
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-10 col-md-11 col-lg-3 col-xl-4" style="align-content: center;">
+                    <h1 style="font-family: 'Poppins';font-weight: bold;font-size: 30px;margin-bottom: 20px;margin-top: 50px;"><strong><span style="color: rgb(0, 0, 0);">O vídeo não é o futuro. </span></strong><br><strong><span style="color: rgb(0, 0, 0);">É o agora!</span></strong></h1>
+                    <p style="font-family: 'Poppins';font-size: 14px;">Não importa o que você vende, o vídeo é a maneira mais humana de contar a sua história.</p>
+                </div>
+                <div class="col-md-11 col-lg-8 col-xl-7 col-xxl-8" style="align-content: center;"><section class="info-grid py-5"> <div class="container">
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="info-number">12x Mais</div>
+          <p>Vídeos geram mais compartilhamentos do que imagens e textos combinados.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="info-number">+100M</div>
+          <p>De brasileiros consomem vídeos online todos os dias em busca de informação.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="info-number">90%</div>
+          <p>Dos consumidores afirmam que o vídeo é decisivo na hora de fechar uma compra.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.info-card {
+  background: rgba(0, 0, 0, 0.05); 
+  border-left: 4px solid #121212;
+  padding: 30px;
+  height: 100%;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.info-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #121212;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: 'Poppins'; 
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  color: #121212;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .info-number {
+    font-size: 2.5rem;
+  }
+}
+</style></div>
+            </div>
+        </div>
+    </section>
+    <hr style="height: 50px;">
+    <section style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xxl-4" style="align-content: center;">
+                    <h1><span style="color: rgb(255, 255, 255);">CONHEÇA A</span><br><span style="color: rgb(245, 92, 1);">NOSSA EQUIPE</span></h1>
+                    <p><span style="color: rgb(255, 255, 255);">Conheça as pessoas por trás das câmeras da Pô Creativity e descubra como trabalhamos.</span></p><a class="btn-orcamento" href="trabalhe.html">Faça parte do nosso time</a>
+                </div>
+                <div class="col-md-6 col-xxl-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="team-section py-5 bg-black">
+  <div class="container">
+    <div class="swiper swiper-team">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="team-card">
+            <div class="team-img" style="background-image: url(assets/img/Equipe/cleverton.webp);">
+              <div class="team-info">
+                <h3>CLEVERTON PORTELA</h3>
+                <p>DIRETOR DE FOTOGRAFIA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card">
+            <div class="team-img" style="background-image: url('assets/img/Equipe/matheus.webp');">
+              <div class="team-info">
+                <h3>MATHEUS OLIVEIRA</h3>
+                <p>DIRETOR GERAL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card">
+            <div class="team-img" style="background-image: url('assets/img/Equipe/rayssa.webp');">
+              <div class="team-info">
+                <h3>RAYSSA VITÓRIA</h3>
+                <p>ASSISTENTE DE PRODUÇÃO</p>
+              </div>
+            </div>
+          </div>
+        </div>         
+          
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+:root {
+  --neon-orange: #F55C01;
+
+.team-section {
+  overflow: hidden;
+}
+
+.swiper-team {
+  padding: 40px 10px 60px 10px !important;
+}
+
+.team-card {
+  border: 2px solid var(--neon-orange);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  aspect-ratio: 1 / 1.3;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%); 
+  position: relative;
+  transition: filter 0.4s ease;
+}
+
+.team-card:hover .team-img {
+  filter: grayscale(0%); 
+}
+
+.team-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  text-align: center;
+  color: white;
+}
+
+.team-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.team-info p {
+  font-size: 0.8rem;
+  margin: 5px 0 0 0;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--neon-orange) !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background: #555 !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--neon-orange) !important;
+  width: 25px !important; 
+  border-radius: 5px !important;
+}
+</style>
+
+<script>
+var swiperTeam = new Swiper(".swiper-team", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  
+  // Navegação
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+  // Paginação
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  
+  // Responsividade
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3, // 3 membros visíveis no desktop
+    },
+  },
+});
+</script></div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xxl-5" style="align-content: center;max-width: 100%;"><div class="row justify-content-center mb-5">
+  <div class="col-lg-10">
+    <a href="https://www.youtube.com/@pocreativity" class="video-link" target="_blank">
+      <div class="ratio ratio-16x9 video-frame shadow-hover">
+        <video autoplay muted loop playsinline poster="thumb_frase.webp" style="filter: grayscale(100%); transition: filter 0.5s ease;">
+          <source src="seu-video-projeto.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+/* Aplica o Preto e Branco no vídeo dentro da moldura do portfólio [cite: 2025-11-01] */
+.video-frame video {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+/* Opcional: Se quiser que ele fique colorido ao passar o mouse, adicione isto: */
+.video-link:hover .video-frame video {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease;
+}
+</style></div>
+                <div class="col-md-6 col-xxl-7" style="align-content: center;">
+                    <hr style="width: 20%;height: 3px;background-color: #b1b1b1;">
+                    <h1 style="font-size: 26px;font-family: 'Poppins';"><span style="color: rgb(255, 255, 255);">Aproxime-se do seu público através de uma linguagem que transborda autenticidade.</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario" style="background-color: #F55C01;border-radius: 20px 20px 0px 0px;min-height: 200px;">
+        <div class="container">
+            <div class="row" style="justify-content: start;">
+                <div class="col-10 col-md-6 col-lg-6 col-xl-6 col-xxl-5" style="align-content: center;justify-content: start;">
+                    <h1 style="font-family: 'Poppins';font-weight: bold;font-size: 30px;margin-bottom: 20px;margin-top: 50px;"><span style="color: rgb(0, 0, 0);">Transforme sua visão em resultados reais através do audiovisual</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 150px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="row">
+                        <div class="col" style="min-height: 40px;align-content: center;margin-top: 50px;"><svg class="bi bi-whatsapp" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 10px;color: #fff;font-size: 25px;">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+                            </svg>
+                            <p style="display: inline;font-family: 'Poppins';font-size: 16px;"><span style="color: rgb(255, 255, 255);">(79) 99954-4810</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="min-height: 40px;align-content: center;margin-bottom: 30px;"><svg class="bi bi-envelope-open" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 10px;color: #fff;font-size: 25px;">
+                                <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"></path>
+                            </svg>
+                            <p style="display: inline;font-family: 'Poppins';font-size: 16px;"><span style="color: rgb(255, 255, 255);">contato@pocreativity.com.br</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-family: 'Poppins';font-weight: bold;font-size: 18px;"><span style="color: rgb(255, 255, 255);">Redes Sociais</span></p><a href="https://instagram.com/po.creativity" target="_blank"><svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: #fff;margin-right: 8px;font-size: 25px;" href="https://instagram.com/suapagina">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg></a><a href="https://www.facebook.com/creativity.po" target="_blank"><svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: #fff;margin-right: 8px;font-size: 25px;">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                                </svg></a><a href="https://www.youtube.com/@pocreativity" target="_blank"><svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: #fff;margin-right: 8px;font-size: 25px;">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+                                </svg></a><a href="https://www.tiktok.com/@po_creativity" target="_blank"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: #fff;font-size: 25px;">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2"><div>
+  <div class="formulario-container bg-white p-4 p-lg-5 shadow-lg rounded-4">
+    <h3 class="fw-bold mb-2">Entre em contato com nossos especialistas.</h3>
+    <p class="text-muted small mb-4">Conte-nos um pouco sobre você e sua empresa:</p>
+    
+    <form action="#" method="POST" id="Formulario">
+      <div class="mb-3">
+        <input type="text" class="form-control custom-input" id="nome" name="nome" placeholder="Nome*" required>
+      </div>
+      
+      <div class="mb-3">
+        <input type="email" class="form-control custom-input" id="email" name="email" placeholder="E-mail*" required>
+      </div>
+      
+      <div class="mb-3">
+        <input type="tel" class="form-control custom-input" id="telefone" name="telefone" placeholder="Telefone*" required>
+      </div>
+        
+     <div class="mb-3">
+        <input type="text" class="form-control custom-input" id="mensagem" name="nome da empresa" placeholder="Nome da Empresa*" required>
+      </div>
+      
+      <div class="mb-4">
+        <input type="text" class="form-control custom-input" id="site" name="site" placeholder="Site Empresa">
+      </div>
+      
+      <div class="text-center">
+        <button type="submit" class="btn btn-enviar-po px-5 py-2 fw-bold text-uppercase">
+          Entre em contato <i class="bi bi-arrow-up-right"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+:root {
+  --po-orange: #F55C01; /* Sua cor oficial */
+}
+
+.formulario-container {
+  /* Garante que o card branco se destaque */
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+  margin-top: -100px;
+}
+
+/* Estilo dos Inputs */
+.custom-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 15px;
+  background-color: #fdfdfd;
+}
+
+.custom-input:focus {
+  border-color: var(--po-orange);
+  box-shadow: 0 0 0 0.25rem rgba(245, 92, 1, 0.1);
+  background-color: #fff;
+}
+
+/* Botão de Envio */
+.btn-enviar-po {
+  background-color: #F55C01;
+  border-radius: 50px;
+  color: #000;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-enviar-po:hover {
+background-color: transparent;
+color: #000;
+border: 1px solid #000;
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade: Garante margem quando o formulário cair para baixo */
+@media (max-width: 767px) {
+  .formulario-container {
+    margin-top: 20px;
+    padding: 30px 20px !important;
+  }
+}
+</style></div>
+            </div>
+        </div>
+    </section>
+    <section style="justify-content: center;text-align: center;">
+        <h1 style="font-weight: bold;margin-bottom: 20px;"><span style="color: rgb(255, 255, 255);">DÚVIDAS FREQUENTES</span></h1>
+        <hr style="width: 65%;height: 3px;margin: 30px auto 10px;background-color: #b1b1b1;">
+        <div class="col" style="margin-bottom: 70px;">
+            <div>
+                <div><details class="accordion">
+    <summary class="accordion__title">Quem é a Pô Creativity?<span></span></summary>
+    <article class="accordion__content">
+        A Pô Creativity é uma produtora audiovisual focada em transformar visões em narrativas de alto impacto. Unimos a precisão técnica ao olhar estratégico para atender empresas e marcas que buscam se destacar no mercado digital.<br><br>Nossa história é escrita projeto a projeto, cuidando de cada etapa: do roteiro ao storyboard, da captação com equipamentos de ponta até a pós-produção final. Somos jovens, focados e movidos pelo desafio de garantir que sua mensagem não seja apenas entregue, mas lembrada.
+    </article>
+</details>
+                    <hr style="width: 65%;height: 3px;margin: auto;background-color: #b1b1b1;">
+                </div>
+                <div><details class="accordion">
+    <summary class="accordion__title">Que tipos de conteúdos a Pô produz?<span></span></summary>
+    <article class="accordion__content">
+        <strong>Vídeos Institucionais -</strong> Fortaleça a imagem da sua empresa apresentando sua estrutura, valores e diferenciais com uma estética cinematográfica.<br><br>
+        <strong>Comerciais e Reels -</strong> Vídeos dinâmicos e persuasivos criados para atrair clientes, aumentar o engajamento e converter vendas, seja para redes sociais ou anúncios.<br><br>
+        <strong>Social Media & Podcast -</strong> Soluções completas para criadores de conteúdo, desde a captação de podcasts até a edição de cortes virais (reels/shorts).<br><br>
+        <strong>Cobertura de Eventos (After Movie) -</strong> Eternizamos a experiência de eventos e ações especiais, criando conteúdos que mantêm o engajamento vivo mesmo após o fim do encontro.<br><br>
+        <strong>Imagens Aéreas (Drone) -</strong> Utilizamos tecnologia de drones com filtros específicos para captar perspectivas únicas e elevar o nível visual da sua produção.<br><br>
+        <strong>Vídeo Case -</strong> Produções que narram histórias reais de sucesso entre sua marca e seus clientes, gerando a prova social necessária para o mercado corporativo.
+    </article>
+</details>
+                    <hr style="width: 65%;height: 3px;margin: auto;background-color: #b1b1b1;">
+                </div>
+                <div><details class="accordion">
+    <summary class="accordion__title">Onde posso utilizar o meu vídeo?<span></span></summary>
+    <article class="accordion__content">
+        <strong>Redes Sociais:</strong> Instagram (Reels), TikTok e YouTube para alcance e engajamento.<br><br>
+        <strong>Canais Próprios:</strong> Site institucional e Landing Pages de vendas para aumentar a conversão.<br><br>
+        <strong>Comunicação Direta:</strong> WhatsApp Business e LinkedIn para prospecções comerciais e relacionamento.<br><br>
+        <strong>Eventos:</strong> Telões em feiras, convenções e apresentações internas.
+    </article>
+</details>
+                    <hr style="width: 65%;height: 3px;margin: auto;background-color: #b1b1b1;">
+                </div>
+                <div><details class="accordion">
+    <summary class="accordion__title">Quanto custa uma produção?<span></span></summary>
+    <article class="accordion__content">
+        Na Pô Creativity, cada projeto é único. O investimento varia de acordo com três pilares principais:<br><br>
+            <strong>1. Pré-produção:</strong> O tempo dedicado à criação do roteiro, planejamento de cenas e conceito criativo.<br><br>
+            <strong>2. Produção:</strong> Envolve a quantidade de diárias, profissionais em set, locações e tecnologias envolvidas (como uso de drones).<br><br>
+            <strong>3. Pós-produção:</strong> O tempo de edição, colorização, trilha sonora e as versões necessárias (formatos para Stories, Feed ou YouTube).<br><br>
+        Acreditamos que o diferencial não está apenas na câmera, mas no olhar de quem opera. Nosso foco é entregar o melhor custo-benefício, aliando tecnologia ao talento humano para superar expectativas.
+    </article>
+</details>
+                    <hr style="width: 65%;height: 3px;margin: auto;background-color: #b1b1b1;">
+                </div>
+                <div><details class="accordion">
+    <summary class="accordion__title">Quais resultados posso alcançar?<span></span></summary>
+    <article class="accordion__content">
+        O audiovisual é a ferramenta de comunicação mais poderosa da atualidade. Com a Pô, você alcança:<br><br>
+        <strong>Autoridade de Marca:</strong> Um vídeo bem produzido transmite confiança e profissionalismo instantâneo.<br><br>
+        <strong>Maior Retenção:</strong> Vídeos retêm a atenção do público por muito mais tempo do que imagens estáticas ou textos.<br><br>
+        <strong>Conversão:</strong> 90% dos consumidores afirmam que o vídeo é decisivo para a tomada de decisão de compra.<br><br>
+        <strong>Alcance:</strong> Algoritmos de redes sociais priorizam conteúdos em vídeo, entregando sua mensagem para mais pessoas.
+    </article>
+</details>
+                    <hr style="width: 65%;height: 3px;margin: auto;background-color: #b1b1b1;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-body py-4" style="background-color: #000 !important;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col" style="align-content: center;"><img class="img-fluid" width="1920" height="360" src="assets/img/Logo%20Site.png" style="max-width: 50%;"></div>
+                <div class="col" style="align-content: center;">
+                    <p class="text-body my-2" style="font-family: 'Poppins';font-size: 10px;margin-bottom: -10px !important;"><span style="color: rgb(255, 255, 255);">Copyright&nbsp;© 2026 Todos os Direitos Reservados</span></p><p class="text-body my-2" style="font-size: 10px;font-family: 'Poppins';"><span style="color: #fff;">Desenvolvido por </span><a href="https://accew.com.br" target="_blank"><span style="color: #fff; text-decoration: underline; text-decoration-color: #fff;"">Accew</span></a></p>
+                </div>
+                <div class="col" style="align-content: center;">
+                    <ul class="list-inline my-2">
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.facebook.com/creativity.po"><svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.youtube.com/@pocreativity"><svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.tiktok.com/@po_creativity"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.instagram.com/po.creativity"><svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/JavaScript.js"></script>
+</body>
+
+</html>

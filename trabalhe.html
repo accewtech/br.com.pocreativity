@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pocreativity</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '899801106302711');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=899801106302711&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body style="background-color: #000000;">
+    <nav class="navbar fixed-top bg-dark navbar-dark" style="background-color: #000 !important;align-content: center;">
+        <div class="container"><a class="navbar-brand" href="index.html" style="width: 80%;"><img class="img-fluid" width="1920" height="360" src="assets/img/Logo%20Site.png" style="max-width: 20%;"></a><button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#formulario">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr style="width: 80%;height: 2px;margin: 30px auto;background-color: #b1b1b1;">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><div class="fatia-container">
+  <img src="assets/img/camera.webp" alt="Fatia de Foto Pô Creativity" class="fatia-img-crop">
+  </div>
+
+<style>
+/* Container: Define o tamanho da "fatia" na tela */
+.fatia-container {
+  height: 40vh;      /* Define a altura da "fatia" (ex: 30% da altura da tela) */
+  position: relative;
+  overflow: hidden;   /* CORTA tudo o que estiver fora dessa altura */
+  background-color: #000; /* Fundo preto preventivo */
+}
+
+/* A Imagem: Precisa ser posicionada para a fatia */
+.fatia-img-crop {
+  width: 100%;       /* Garante que a imagem preencha a largura da fatia */
+  height: auto;      /* Mantém a proporção original da foto (não distorce) */
+  
+  position: absolute;
+  top: 50%;          /* Move o topo da imagem para o centro do container */
+  left: 50%;         /* Move a esquerda da imagem para o centro do container */
+  
+  /* O PULO DO GATO: Centraliza a imagem e define qual 'fatia' aparece */
+  /* translateY(-50%) centraliza verticalmente a foto na fatia de 30vh */
+  transform: translate(-50%, -50%); 
+  
+  min-height: 100%;  /* Garante que a imagem nunca seja menor que a fatia */
+  object-fit: cover; /* Ajuste final preventivo para garantir o preenchimento */
+  z-index: 1;
+}
+
+/* Opcional: Estilo para o conteúdo sobre a fatia */
+.fatia-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5); /* Escurecimento para leitura */
+}
+</style>
+
+</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-12" style="width: 70%;"><section class="py-5 bg-black text-white" style="font-family: 'Poppins', sans-serif;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="display-3 fw-bold text-uppercase mb-0" style="letter-spacing: -2px;">Se conecte com a Pô</h1>
+      <p class="text-uppercase small fw-light" style="letter-spacing: 4px; color: #888;">Trabalhe Conosco</p>
+    </div>
+
+    <form id="formRecrutamento" class="row g-4 justify-content-center">
+      <!-- Coluna Esquerda -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <input type="text" name="nome" class="form-control recruit-input" placeholder="Nome completo" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" name="funcao" class="form-control recruit-input" placeholder="Função">
+        </div>
+        <div class="mb-4 d-flex align-items-center flex-wrap">
+          <span class="me-3 fw-bold small text-uppercase">Disponibilidade imediata:</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input recruit-check" type="radio" name="disponibilidade" value="sim" id="recruitSim">
+            <label class="form-check-label" for="recruitSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input recruit-check" type="radio" name="disponibilidade" value="nao" id="recruitNao">
+            <label class="form-check-label" for="recruitNao">Não</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" class="form-control recruit-input" placeholder="Email" required>
+        </div>
+        <div class="d-flex align-items-center flex-wrap">
+          <span class="me-3 fw-bold small text-uppercase">Interesse na vaga:</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input recruit-check" type="checkbox" name="tipo_vaga" value="fixo" id="recruitFixo">
+            <label class="form-check-label" for="recruitFixo">Fixo</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input recruit-check" type="checkbox" name="tipo_vaga" value="freela" id="recruitFreela">
+            <label class="form-check-label" for="recruitFreela">Freela</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna Direita -->
+      <div class="col-md-5">
+        <div class="mb-3">
+          <input type="text" name="nascimento" class="form-control recruit-input" placeholder="Data de Nascimento">
+        </div>
+        <div class="mb-3">
+          <label class="small d-block mb-1 text-uppercase fw-bold" style="font-size: 10px;">Envie seu currículo (PDF até 25MB)</label>
+          <input type="file" name="curriculo" class="form-control recruit-input" accept=".pdf">
+        </div>
+        <div class="mb-3">
+          <input type="text" name="cidade" class="form-control recruit-input" placeholder="Cidade">
+        </div>
+        <div class="mb-3">
+          <input type="url" name="portfolio" class="form-control recruit-input" placeholder="Link do portfólio">
+        </div>
+      </div>
+
+      <!-- Botão Enviar -->
+      <div class="col-12 text-center mt-5">
+        <button type="submit" id="btnRecruitSubmit" class="recruit-btn-submit">ENVIAR</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<style>
+    /* Inputs Customizados */
+.recruit-input {
+    background-color: transparent !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    padding: 12px 15px !important;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.recruit-input::placeholder {
+    color: #666 !important;
+    font-style: italic;
+}
+
+.recruit-input:focus {
+    border-color: #F55C01 !important; /* Cor da Pô Creativity */
+    box-shadow: none !important;
+}
+
+/* Radios e Checkboxes */
+.recruit-check {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+}
+
+.recruit-check:checked {
+    background-color: #F55C01 !important;
+    border-color: #F55C01 !important;
+}
+
+/* Botão de Envio Estilo Título */
+.recruit-btn-submit {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.recruit-btn-submit:hover {
+    color: #F55C01;
+    transform: scale(1.05);
+}
+
+.recruit-btn-submit:disabled {
+    color: #444;
+    cursor: not-allowed;
+}
+</style>
+</div>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 80%;height: 2px;margin: 30px auto;background-color: #b1b1b1;">
+    <footer class="text-center bg-body py-4" style="background-color: #000 !important;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col" style="align-content: center;"><img class="img-fluid" width="1920" height="360" src="assets/img/Logo%20Site.png" style="max-width: 50%;"></div>
+                <div class="col" style="align-content: center;">
+                    <p class="text-body my-2" style="font-family: 'Poppins';font-size: 10px;margin-bottom: -10px !important;"><span style="color: rgb(255, 255, 255);">Copyright&nbsp;© 2026 Todos os Direitos Reservados</span></p><p class="text-body my-2" style="font-size: 10px;font-family: 'Poppins';"><span style="color: #fff;">Desenvolvido por </span><a href="https://accew.com.br" target="_blank"><span style="color: #fff; text-decoration: underline; text-decoration-color: #fff;"">Accew</span></a></p>
+                </div>
+                <div class="col" style="align-content: center;">
+                    <ul class="list-inline my-2">
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.facebook.com/creativity.po"><svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.youtube.com/@pocreativity"><svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item me-4"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.tiktok.com/@po_creativity"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a class="bs-icon-circle bs-icon-primary bs-icon" href="https://www.instagram.com/po.creativity"><svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/JavaScript.js"></script>
+</body>
+
+</html>
